@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jose Gamero's Home Page</title>
+  <style> 
+    body{
+      background-color: gray;
+    }
+    .anchors{
+      margin-right: 5px;
+      color: white;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a.course:visited{
+      color: black;
+      background-color: transparent;
+      text-decoration: none; 
+    }
+    .name{
+      display: inline-block;
+      margin-left: 900px; 
+      color: white;}
+    table{
+      margin: 0px 200px; 
+      color: black;
+      background-color: white;
+      border: 2px solid black;
+    }
+    th{
+      border: 2px solid black;
+    }
+    div.pic{
+      text-align: center;
+    }
+    div.cs{
+      margin: 30px;
+      text-align: center;
+      font-size: 120%;
+    }
+    h1{
+      color: white;
+      font-family: Helvetica;
+      text-align:center;
+    }
+    blockquote{
+      color:white;
+      text-align: center;
+    }
+    h2{
+      color:white;
+      font-family: fantasy;
+      text-align: center;
+      text-decoration: underline;
+    }
+    pre{
+      color:white;
+      font-family: arial;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p class="anchors"><a href="#B">Jump to Bottom</a></p>
+    <h1 id="T">Welcome to Jose Gamero's Home Page</h1>
+  </header>  
+  <hr>
+  <blockquote>
+    <i>
+      "You miss 100% of the shots you don't take."    
+    </i>  
+  </blockquote>
+  <div class="pic"><img src="family.jpg" alt="family" width="380" height="320" ></div>
+  <h2>About Me</h2> 
+  <pre> 
+  Hello! My name is Jose Gamero. I was born in Peru <a href="https://www.lonelyplanet.com/peru" target="_blank"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/flag-for-peru_1f1f5-1f1ea.png" width="20" height="20" alt="Peru Flag"></a>
+  but raised in the great state of Washington <a href="http://www.experiencewa.com/" target="_blank"><img src="https://statesymbolsusa.org/sites/statesymbolsusa.org/files/primary-images/Flag-of-Washington-state.jpg" width="30" height="15" alt="Washington Flag"></a>
+  I am stuying at the Brigham Young University-Idaho. 
+  I am majoring in Software Engineering.  
+  </pre>
+  <h2>Class Schedule</h2>
+  <table>
+    <tr>
+      <th>Course #</th>
+      <th>Sec #</th> 
+      <th>Course Description: </th>
+      <th>Class Time</th>
+      <th>Class Location</th>
+    </tr>
+    <tr>
+      <th><a class="course" href="http://www.byui.edu/catalog/#/courses/Nkexhxhjb?bc=true&bcCurrent=Data%20Structures&bcGroup=Computer%20Science&bcItemType=Courses">
+        CS 235</a></th>
+      <th>Sec 01</th> 
+      <th>Data Structures: Builds on the foundation of CS 124 and CS 165 to 
+        introduce the fundamental concepts of data structures and the algorithms 
+        that proceed from them.</th>
+      <th>M,W,F 09:00AM-10:00AM</th>
+      <th>STC 231</th>
+    </tr>
+    <tr>
+      <th><a class="course" href="http://www.byui.edu/catalog/#/courses/4kzoaixnsZ?bc=true&bcCurrent=Systems%20Security%20I&bcGroup=Computer%20Information%20Technology&bcItemType=Courses">
+        CIT 270</a></th>
+      <th>Sec 01</th> 
+      <th>Systems Security: The purpose of this course is to provide the student 
+        with an overview of the field of Information Security and Assurance. 
+      </th>
+      <th>M,W,F 10:15AM-11:15AM</th>
+      <th>STC 356</th>
+    </tr>
+    <tr>
+      <th><a class="course" href="http://www.byui.edu/catalog/#/courses/Ey-x2xho-?bc=true&bcCurrent=Software%20Design%20and%20Development&bcGroup=Computer%20Science&bcItemType=Courses">
+        CS 246</a></th>
+      <th>Sec 02</th> 
+      <th>Software Design and Development: Advanced object-oriented designs and 
+        software development.</th>
+      <th>M,W,F 11:30AM-12:30PM</th>
+      <th>STC 385</th>
+    </tr>
+    <tr>
+      <th><a class="course" href="http://www.byui.edu/catalog/#/courses/Ek-kx3lno-?bc=true&bcCurrent=Web%20Engineering%20I&bcGroup=Computer%20Science&bcItemType=Courses">
+        CS 213</a></th>
+      <th>Sec 02</th> 
+      <th>Web Engineering 1: Internet and web basics, web fundamentals, web browsers, 
+        web servers, and web terminology. </th>
+      <th>Anytime</th>
+      <th>Home</th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <div style="margin:auto; width: 300px; background-color:white;border: 2px solid black" >
+    <form>
+      <p style="text-align: center; text-decoration: underline;">Fill out survey below to find out if we are compatible</p> 
+      <fieldset>
+        <legend style="font-size: 110%"><b>Survey</b></legend>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname"><br>
+        <br>
+        Favorite Sport:<br>
+        <input type="radio" name="Sport" value="Basketball" checked> Basketball<br>
+        <input type="radio" name="Sport" value="Football"> Football<br>
+        <input type="radio" name="Sport" value="Soccer"> Soccer <br><br>
+        Favorite Fast Food Joint:<br>
+        <input type="checkbox" name="FastFood" value="Wendys" checked> Wendys<br>
+        <input type="checkbox" name="FastFood" value="McDonalds"> McDonalds<br>
+        <input type="checkbox" name="FastFood" value="Sonic">Sonic<br><br>
+        Best TV Series:<br>
+        <select>
+          <option value="Friends">Friends</option>
+          <option value="Seinfeld">Seinfeld</option>
+          <option value="Riverdale">Riverdale</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit"><br>
+        <input type="reset" value="Reset">
+      </fieldset>
+    </form>
+  </div>
+  <br>
+  <hr>
+  <div class="cs"><a href="index.html" target="_blank" style="color:white"> <b>CS 213 Assignments</b></a></div>
+</body>
+<footer>
+  <p id="B" class="name">Posted by: Jose Gamero || Contact information: <a href="mailto:josejgamero@gmail.com">josejgamero@gmail.com</a></p>
+  <p class="anchors"><a href="#T">Jump to Top</a></p>
+</footer>  
+</html>

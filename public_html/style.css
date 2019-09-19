@@ -1,0 +1,75 @@
+body{
+    background-color: darksalmon;
+}
+p.notice{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background-color: gray;
+}
+p.error{
+    color: red;
+    font-size: 11px;
+    font-style: italic;
+    margin: 0px 50px;
+}
+hr {
+    border: 1px solid black;
+  }
+h1{
+    text-align: center;
+}
+header{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+div.selection{
+    height: 690px;
+    width: 400px;
+    background-color: powderblue;
+    border-style: solid;
+    margin: 0px 70px;
+    float: left;
+}
+div.bInfo{
+    background-color: powderblue;
+    border-style: dotted;
+    text-align: center;
+}
+.price{
+    text-align: center;
+    font-weight: bold;
+}
+div.payment{
+    border-style: dotted;
+    height: 690px;
+    width: 740px;
+    background-color: powderblue;
+    margin: 0px 530px;
+}
+h2{
+    margin: 0px 120px;
+}
+#CheckOut{
+    margin: 0px 320px;
+}
+
+h2.shop{
+   font-family: 'Times New Roman', Times, serif;
+   color: black;
+   text-align: center;
+   font-size: 30px;
+}
+.cc1{
+    font-weight: bold;
+    font-size: 20px;
+}
+.total{
+    font-weight: bold;
+    font-size: 20px;
+}
+.name{
+    text-align: center;
+}
+  
+

@@ -1,0 +1,41 @@
+header{
+  background-image: url(https://s3.amazonaws.com/99Covers-Facebook-Covers/watermark/3706.jpg);
+}
+body {
+  background-color: rgb(237, 238, 240);
+  }
+.lines{
+  line-height: 16;
+}
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color:gray;
+  }
+li {
+  float: left;
+   }
+li.right{
+  float:right;
+    }
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  }
+li a:hover {
+  background-color: #111;
+  }
+  
+.active {
+  background-color: gray;
+  }
+h1{
+    text-align: center;
+    font-family: inherit;
+}

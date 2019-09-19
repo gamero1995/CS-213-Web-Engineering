@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  img.a {
+  vertical-align:middle;
+  }
+</style>
+  <title>Jose Gamerome Page</title>
+</head>
+
+<body style="background-color:gray;">
+  <h1 style="color:white;font-family:helvetica;text-align: center;" >Welcome to Jose Gamero's Home Page</h1>
+  
+  <hr>
+  <blockquote style="color:white;text-align: center;">
+    <i>
+      "You miss 100% of the shots you don't take."    
+    </i>  
+  </blockquote>
+
+  <img class="a" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/33944200_10156235604010218_6569453204252131328_n.jpg?_nc_cat=109&_nc_ht=scontent-sea1-1.xx&oh=fed02b207786198c2ed544a42071fd3d&oe=5D36F9D4" alt="Family" width="300" height="300" >
+
+</body>
+
+</html>

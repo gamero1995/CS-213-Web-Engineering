@@ -1,0 +1,27 @@
+@media only screen and (max-width: 599px) {
+    #flex_first {
+       margin: auto;
+       margin-top: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+ }
+ @media only screen and (min-width: 600px) {
+    #flex_first {
+       margin: auto;
+       margin-top: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+ }
+ @media only screen and (min-width: 1200px) {
+    #flex_first {
+       margin: auto;
+       margin-top: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+ }

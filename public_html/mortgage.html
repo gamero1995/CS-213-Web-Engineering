@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mortgage Calculator</title>
+  <meta charset="UTF-8">
+  <script src="loanCalculator1.js"></script>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+  <br class="lines">
+  <form id="myform" onsubmit="return validate()" action="mortgage.php" method="POST">
+    <h1>Mortgage Calculator</h1>
+    <br>
+    <img class="calculator" src="https://cdn5.vectorstock.com/i/1000x1000/19/39/smirking-cute-calculator-character-cartoon-vector-18401939.jpg" alt="Calculator" width = "60" height="80">
+    <br>
+    <br>
+    <p>APR: <input name="apr" id="apr" type="number" min="0" max="25" step=".01"> </p>
+    <p class="error" id="invalidAPR"></p>
+    <p>Loan Amount (Total): <input name="amount" id="amount" type="number" min="1"> </p>
+    <p class="error" id="invalidLoan"></p>
+    <p>Loan Term (Years): <input name="term" id="term" type="number" min="1" max="40"></p>
+    <p class="error" id="invalidTerm"></p>
+    <p><input id="calculate" type="submit"  value="Calculate"></p>
+    <p><input id="clear" type="button" onclick="reset()" value="Reset"></p>
+    <p class="payment" id="payment"> </p>
+  </form>
+  <br class="lines">
+  <footer>
+    <p class="name">Posted by: Jose Gamero || Contact information: <a href="mailto:josejgamero@gmail.com">josejgamero@gmail.com</a></p>
+  </footer>
+</body>
+</html>

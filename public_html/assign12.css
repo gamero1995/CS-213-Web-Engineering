@@ -1,0 +1,19 @@
+
+div {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+body{
+    background-color: bisque;
+}
+.error{
+    color: red;
+    font-style: italic;
+    font-size: 11px;
+}
+footer{
+    margin-top: 400px;
+    text-align: center;
+
+}

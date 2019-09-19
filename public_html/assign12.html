@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mileage Calculator </title>
+  <meta charset="UTF-8">
+  <script src="assign12.js"></script>
+  <link rel="stylesheet" type="text/css" href="assign12.css">
+</head>
+<body>
+   <form id="myForm">
+      <div>
+         <h1>Mileage Calculator</h1> 
+         <hr>
+         <br>
+         <p>Starting City: <input name="startCity" id="startCity" type="text"> </p>
+         <p class="error" id="invalidStarting"></p>
+         <p>Starting State: <input name="startState" id="start_state" type="text" maxlength="2"> </p>
+         <p class="error" id="invalidState"></p>
+         <p>Ending City: <input name="endCity" id="end_city" type="text"> </p>
+         <p class="error" id="invalidEnd"></p>
+         <p>Ending State: <input name="endState" id="end_state" type="text" maxlength="2"> </p>
+         <p class="error" id="invalidEndState"></p>
+         <br>
+         <input type="button" onclick= "reset(); clearM()" value="Reset">
+         <input id="clear" type="button" onclick="loadDoc(); validate()" value="Calculate">
+         <p id="calculation"></p>
+
+      </div>
+   </form>
+   <footer>
+      <p class="name">Posted by: Jose Gamero || Contact information: <a href="mailto:josejgamero@gmail.com">josejgamero@gmail.com</a></p>
+   </footer>
+</body>
+
+</html>

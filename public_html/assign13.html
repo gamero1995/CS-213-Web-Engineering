@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Music Festival Registration Website </title>
+   <meta charset="UTF-8">
+   <script src="assign13.js"></script>
+   <link rel="stylesheet" type="text/css" href="assign13.css">
+   <meta name="description" content="This website will allow you to register for the upcoming music festival">
+</head>
+<body onload="readTextFile()">
+   <header>
+      <br class="lines">
+      <h1>Music Festival Registration</h1>
+      <br class="lines">
+   </header>
+   <br class="lines">
+   <form id="myForm">
+      <br>
+      <p>Performance type:</p>
+      <input type="radio" name="performance" value="Solo" onchange="hide();clearM()"> Solo
+      <input type="radio" name="performance" value="Duet" onchange="unhide();clearM()"> Duet
+      <input type="radio" name="performance" value="Concerto" onchange="hide();clearM()"> Concerto
+      <p class="error" id="invalid_performance"></p>
+      <div id="first_student" class="first_student">
+         <h2 id="first" class="hide">First Student:</h2>
+         First Name: <input name="first_name" id="first_name" type="text">
+         <p class="error" id="invalid_first"></p>
+         Last Name: <input name="last_name" id="last_name" type="text">
+         <p class="error" id="invalid_last"></p>
+         Student ID: <input name="student_id" id="student_id" pattern="\d*" maxlength="9" type="text">
+         <p class="error" id="invalid_number"></p>
+      </div>
+      <div id="duo" class="hide">
+         <h2>Second Student:</h2>
+         First Name: <input name="first_name" id="first_name1" type="text">
+         <p class="error" id="invalid_first1"></p>
+         Last Name: <input name="last_name" id="last_name1" type="text">
+         <p class="error" id="invalid_last1"></p>
+         Student ID: <input name="student_id" id="student_id1" pattern="\d*" maxlength="9" type="text">
+         <p class="error" id="invalid_number1"></p>
+      </div>
+      Skill Level: <select name="skill" id="skill">
+         <option value="">-- Choose a Skill Level --</option>
+         <option value="Beginner">Beginner</option>
+         <option value="Intermediate">Intermediate</option>
+         <option value="Pre-advanced">Pre-Advanced</option>
+         <option value="Advanced">Advanced</option>
+      </select>
+      <p class="error" id="invalid_skill"></p>
+      Instrument: <select name="instrument" id="instrument">
+         <option value="">-- Choose a Intrument --</option>
+         <option value="Piano">Piano</option>
+         <option value="Voice">Voice</option>
+         <option value="String">String</option>
+         <option value="Organ">Organ</option>
+         <option value="Other">Other</option>
+      </select>
+      <p class="error" id="invalid_instrument"></p>
+      <p>Location:</p>
+         <input type="radio" name="location" value="Snow"> Snow
+         <input type="radio" name="location" value="Austin"> Austin
+         <input type="radio" name="location" value="Hart"> Hart
+      <p class="error" id="invalid_location"></p>
+      Room #: <input name="room" id="room" pattern="\d*" maxlength="4">
+      <p class="error" id="invalid_room"></p>
+      Time Slot: <select name="time_slot" id="time_slot">
+         <option value="">-- Choose a Time Slot --</option>
+         <option value="8:00AM">8:00 AM</option>
+         <option value="8:30AM">8:30 AM</option>
+         <option value="9:00AM">9:00 AM</option>
+         <option value="9:30AM">9:30 AM</option>
+         <option value="10:00AM">10:00 AM</option>
+         <option value="10:30AM">10:30 AM</option>
+      </select>
+      <p class="error" id="invalid_time"></p>
+      <input type="button" onclick="loadDoc(); validate();" value="Register">
+      <input type="button" onclick= "reset(); clearM()" value="Clear">
+      <br>
+      <br>
+   </form>
+   <br class="lines">
+   <table id="table"></table>
+   <footer>
+      <p class="name">Posted by: Jose Gamero || Contact information: <a href="mailto:josejgamero@gmail.com">josejgamero@gmail.com</a></p>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shop Jose's Closet </title>
+  <meta charset="UTF-8">
+  <script src="shop.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="message()">
+   <header>
+      <h1 style="text-align:center">Jose's Closet</h1>
+   </header>
+   <hr>
+   <p class="notice" id="mustGo"></p>
+   <form id="myForm" onsubmit= "return validates()" onreset="displayReset()" action="assign11.php" method="POST" >
+   <br>
+   <h2>Select Your Desired Items</h2>
+   <div class="selection">
+      <table>
+         <tr>
+            <th>Item</th>
+            <th>Picture</th>
+            <th>Price </th>
+         </tr> 
+         <tr>
+            <td><input type="checkbox" name="check1" class="checks" id="nikeJacket" data-price="40" value="Nike Jacket" />Nike Jacket</td>
+            <td><img src="https://c.static-nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/latknqej1pjkdqvpef9b/sportswear-windrunner-mens-hooded-windbreaker-qJlX5L.jpg" alt="Nike Jacket" width = "120" height="140"></td>
+            <td class="price">$40</td>
+         </tr>
+         <tr>
+            <td><input type="checkbox" name="check2" class="checks" id="trefoil" data-price="40" value="Adidas Trefoil-hoodie"/>Adidas Trefoil-hoodie</td>
+            <td><img src="https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto:sensitive,fl_lossy/8343e59a864e4a408dbba928010fef69_9366/trefoil-hoodie.jpg" alt="Adidas Trefoil" width = "120" height="140"></td>
+            <td class="price">$40</td>
+         </tr>
+         <tr>
+            <td><input type="checkbox" name="check3" class="checks" id="wcTee" data-price="20" value="Adidas Worldcup Tee"/>Adidas Worldcup Tee</td>
+            <td><img src="https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/c97da58ca5db4ba6ad17a85e00d16b4e_9366/'94_Tour_Tee_White_CD6958_21_model.jpg" alt="Adidas World Cup" width = "120" height="140"></td>
+            <td class="price">$20</td>
+         </tr>
+         <tr>
+            <td><input type="checkbox" name="check4" class="checks" id="AF" data-price="80" value="Nike AF Flyknit"/>Nike AF Flyknit</td>
+            <td><img src="https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/jyfsnrfrqnvo8ahvuzeg/air-force-1-flyknit-2-mens-shoe-4smM2X.jpg" alt="Nike AF" width = "120" height="140"></td>
+            <td class="price">$80</td>
+         </tr>
+      </table>
+      <p><input id="CheckOut" type="button" onclick="totalPrice()" value="Check Out"></p>
+   </div>
+   <div class="payment">
+      <h2 class="shop">Check Out Information</h2>
+      <p>First Name: <input name="first" id="first_name" type="text"> </p>
+      <p class="error" id="invalidName"></p>
+      <p>Last Name: <input name="last" id="last_name" type="text"> </p>
+      <p class="error" id="invalidLName"></p>
+      <p>Address (street address, city, state, and zip): <input name="address" id="address"></p>
+      <p class="error" id="invalidAddress"></p>
+      <p>Phone (XXX-XXX-XXXX): <input name="phone" id="phone" type="text" maxlength="12" onchange="validatePhone()"></p>
+      <p class="error" id="invalidPhone"></p>
+      <p class="cc1">Please Enter Credit Card Information: </p>
+      <p> Card Type:</p>
+      <input type="radio" name="card_type" value="VISA" checked><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLjYLAdQMJZoarhR-Z891qZhkZxrxjjjdE_55EEzciGuoiepWCOg" alt="VISA" width = "50" height="50"><br>
+      <input type="radio" name="card_type" value="MasterCard"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlIIIUBQRzlZfSPgIP1LHKFwVRwZH4qfHDVg4a-1rOpW3oBcGNw" alt="MasterC" width = "50" height="40"><br>
+      <input type="radio" name="card_type" value="AmericanExpress"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEeaQuHhtnenxvzio4bqJJSOk8HrCWbzgfJNsis10KESbhM8pjw" alt="AE" width = "50" height="40"><br>
+      <br>
+      <p>  Credit Card #: <input id="credit_card" type="text" pattern="\d*" maxlength="16" onchange="validateCC()"> </p>
+      <p class="error" id="invalidCardNumber"></p>
+      <p>Expiration Date (xx/xxxx): <input name="expDate" id="exp-date" type="text" maxlength="7" onchange="validateDate()"> </p>
+      <p class="error" id="expDate"></p>
+      <p class="total">Total:</p>
+      <p class="total" id="total"></p>
+      <p><input id="clear" type="button" onclick="reset(); resetTotal()" value="Reset"></p>
+      <p id="resetDone"></p>
+      <p><input id="validate" type="submit" value="Submit Payment"></p>
+   </div>
+   </form>
+   <footer>
+      <p class="name">Posted by: Jose Gamero || Contact information: <a href="mailto:josejgamero@gmail.com">josejgamero@gmail.com</a></p>
+   </footer>
+</body>
+</html>

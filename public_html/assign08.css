@@ -1,0 +1,170 @@
+
+body{
+    background-color: lightgrey;
+}
+@media only screen and (max-width: 779px) {
+    .title-container {
+        display: flex;
+        justify-content: flex-start;
+        background-color: crimson;
+        list-style-type: none;
+    }
+    .title-container li{
+        padding: 0px 50px 0px 0px;
+    }
+    .name{
+        padding: 2opx 0px 0px 0px;
+        font-size: 25px;
+    }
+    .letter{
+        font-size: 120px;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        background-color: gray;
+        list-style-type: none;
+    }
+    
+    .nav-container li {
+        padding: 20px;
+    }
+    li a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        }
+    .nav-container li:hover {
+        background-color: #111;
+        }    
+    div.body-container{
+        background-color: gray;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .body-container > div {
+        font-size: 12px;
+      }
+    .content{
+        padding-left: 15px;
+        color:white;
+    }
+    footer{
+        background-color: gray;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+ }
+ @media only screen and (min-width: 780px) {
+    .title-container {
+        display: flex;
+        justify-content: flex-start;
+        background-color: crimson;
+        list-style-type: none;
+    }
+    .title-container li{
+        padding: 0px 50px 0px 0px;
+    }
+    .name{
+        padding: 2opx 0px 0px 0px;
+        font-size: 25px;
+    }
+    .letter{
+        font-size: 120px;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        background-color: gray;
+        list-style-type: none;
+    }
+    
+    .nav-container li {
+        padding: 20px;
+    }
+    li a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        }
+    .nav-container li:hover {
+        background-color: #111;
+        }    
+    div.body-container{
+        background-color: gray;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .body-container > div {
+        font-size: 20px;
+      }
+    .content{
+        padding-left: 15px;
+        color:white;
+    }
+    footer{
+        background-color: gray;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+ }
+ @media only screen and (min-width: 1200px) {
+    .title-container {
+        display: flex;
+        justify-content: flex-start;
+        background-color: crimson;
+        list-style-type: none;
+    }
+    .title-container li{
+        padding: 0px 50px 0px 0px;
+    }
+    .name{
+        padding: 2opx 0px 0px 0px;
+        font-size: 25px;
+    }
+    .letter{
+        font-size: 120px;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        background-color: gray;
+        list-style-type: none;
+    }
+    
+    .nav-container li {
+        padding: 20px;
+    }
+    li a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        }
+    .nav-container li:hover {
+        background-color: #111;
+        }    
+    div.body-container{
+        background-color: gray;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .body-container > div {
+        font-size: 30px;
+      }
+    .content{
+        padding-left: 15px;
+        color:white;
+    }
+    footer{
+        background-color: gray;
+        color: white;
+        text-align: center;
+    }
+ }

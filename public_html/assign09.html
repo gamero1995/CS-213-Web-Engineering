@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>AJAX/JSON Assignment</title>
+   <link rel="stylesheet" type="text/css" href="assign09.css">
+   <script src=assign09.js></script>
+</head>
+<body class="body-container">
+   <div class="container">
+      <div class="ajax">
+         <h1>Cities</h1>
+         Select a country
+        <br>
+        <select id = "city" onchange="getText()">
+           <option value="option">-- Choose a Country --</option>
+           <option value="usa.txt">US</option>
+           <option value="canada.txt">Canada</option>
+           <option value="mexico.txt">Mexico</option>
+           <option value="russia.txt">Russia</option>
+        </select>
+        <pre id = "response" class="response"></pre>
+       </div>
+       <br>
+       <div class="json">
+          <h1>Students</h1>
+          Enter File Name:
+          <br>       
+          <input type="text" id="file"><br>
+          <input type="submit" value="Submit" onclick="jsonFunction()">
+          <p id="student" class="response"></p>
+       </div>
+   </div>
+   <br>
+   <footer>
+      <p>Posted by: Jose Gamero || Contact information: <a href="mailto:josejgamero@gmail.com">josejgamero@gmail.com</a></p>
+   </footer>
+</body>
+</html>

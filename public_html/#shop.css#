@@ -1,0 +1,39 @@
+body{
+    background-color: darksalmon;
+}
+div.selection{
+    height: 630px;
+    width: 400px;
+    background-color: powderblue;
+    border-style: solid;
+    margin: 0px 50px;
+    float: left;
+}
+header{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+div.payment{
+    border-style: dotted;
+    height: 630px;
+    width: 600px;
+    background-color: white;
+    margin: 0px 500px;
+}
+h2{
+    margin: 0px 120px;
+}
+.shop{
+   font-family: 'Times New Roman', Times, serif;
+}
+hr {
+    border: 1px solid black;
+  }
+  
+.price{
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
